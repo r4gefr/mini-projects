@@ -41,7 +41,7 @@ MiniProjects/
 
 ## Connect With Me
 
-- LinkedIn: www.linkedin.com/in/vikanshu-sharma-67b0b6360
+- LinkedIn: www.linkedin.com/in/vikanshu-sharma
 
 ---
 
