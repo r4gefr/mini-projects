@@ -2,7 +2,10 @@
 
 Simple command-line calculator.
 Supports: +, -, *, /, %, //, **
+<<<<<<< HEAD
 
+=======
+>>>>>>> 492f2f938cb8a0cfdb1f36d898da2297175bd110
 """
 
 def add(a, b): return a + b
