@@ -15,7 +15,7 @@ Classic Snake built with Python's Tkinter.
 
 ## Run
 ```
-python snake_game.py
+python game.py
 ```
 
 ## Controls

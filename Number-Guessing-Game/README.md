@@ -14,19 +14,19 @@ A beginner-friendly number guessing game built with Python. The project helps pr
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/r4gefr/python-mini-projects.git
+   git clone https://github.com/r4gefr/mini-projects.git
    ```
 
 2. Open the project folder:
    ```bash
-   cd python-mini-projects
+   cd mini-projects
    ```
 
 3. Navigate to the NumGuessing project folder.
 
 4. Run the Python file:
    ```bash
-   python your_file_name.py
+   python NumGuessing.py
    ```
 
 ## Tech Stack
@@ -40,7 +40,8 @@ A beginner-friendly number guessing game built with Python. The project helps pr
 
 ```bash
 NumGuessing/
-└── your_python_file
+└── NumGuessing.py
+└── NumGuessingTkinter.py
 ```
 
 ## Support / Contact

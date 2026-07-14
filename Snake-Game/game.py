@@ -1,6 +1,7 @@
 from tkinter import *
 import random
 
+# ---- Config ----
 GAME_WIDTH = 700
 GAME_HEIGHT = 700
 SPACE_SIZE = 50
@@ -10,7 +11,7 @@ FOOD_COLOR = "#FF0000"
 BACKGROUND_COLOR = "#000000"
 START_SPEED = 100
 MIN_SPEED = 40
-SPEED_STEP = 3  
+SPEED_STEP = 3 
 
 
 class Snake:
