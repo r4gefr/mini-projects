@@ -15,11 +15,15 @@ Enter city name: Delhi
 
 ==========================================
 📍 Location      : Delhi, IN
-🌡️ Temperature   : 33.4°C
-🤒 Feels Like    : 36.1°C
-💧 Humidity      : 64%
-🌬️ Wind Speed    : 3.8 m/s
-☁️ Condition     : Clear Sky
+🌡️ Temperature   : 35.5°C
+🤒 Feels Like    : 40.3°C
+☁️ Condition     : Scattered Clouds
+💧 Humidity      : 75%
+🌬️  Wind Speed    : 7 m/s
+🎯 Pressure      : 1004 hPa
+👀 Visibility    : 10.0 km
+🌅 Sunrise       : 06:32 AM
+🌇 Sunset        : 07:41 PM
 ==========================================
 ```
 
@@ -115,15 +119,4 @@ python-dotenv
 
 ---
 
-## Future Improvements
-
-- 5-day weather forecast
-- Air Quality Index (AQI)
-- UV Index
-- Weather icons
-- Search history
-- Colored terminal output
-- Save favorite cities
-
----
 
