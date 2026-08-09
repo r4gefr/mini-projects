@@ -19,7 +19,7 @@ Enter city name: Delhi
 🤒 Feels Like    : 40.3°C
 ☁️ Condition     : Scattered Clouds
 💧 Humidity      : 75%
-🌬️  Wind Speed    : 7 m/s
+🌬️ Wind Speed    : 7 m/s
 🎯 Pressure      : 1004 hPa
 👀 Visibility    : 10.0 km
 🌅 Sunrise       : 06:32 AM
