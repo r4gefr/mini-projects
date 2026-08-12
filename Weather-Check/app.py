@@ -1,5 +1,5 @@
 import os
-from datetime import datetime
+from datetime import datetime, timezone, timedelta
 
 import requests
 from dotenv import load_dotenv
@@ -117,6 +117,10 @@ def display_weather(data):
     wind_speed = data["wind"]["speed"]
     wind_degrees = data["wind"].get("deg", 0)
     wind_direction = get_wind_direction(wind_degrees)
+    
+    city_timezone = timezone(timedelta(seconds=data["timezone"]))
+
+    local_time = datetime.now(timezone.utc).astimezone(city_timezone).strftime("%I:%M %p")
 
     sunrise = datetime.fromtimestamp(
         data["sys"]["sunrise"]
@@ -131,6 +135,7 @@ def display_weather(data):
     print("=" * 55)
 
     print(f"📍 Location      : {data['name']}, {data['sys']['country']}")
+    print(f"🕐 Local Time     : {local_time}")
     print(f"🌡️  Temperature   : {data['main']['temp']:.1f}°C")
     print(f"🤒 Feels Like    : {data['main']['feels_like']:.1f}°C")
     print(f"{weather_icon}  Condition     : "f"{data['weather'][0]['description'].title()}")
