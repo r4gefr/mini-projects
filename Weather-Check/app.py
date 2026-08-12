@@ -92,12 +92,31 @@ def get_weather_icon(weather_id):
     return "🌡️"
 
 
+# GET WIND DIRECTION
+
+def get_wind_direction(degrees):
+    """Convert wind direction in degrees to a compass direction."""
+
+    directions = [
+        "N(North)", "NE(Northeast)", "E(East)", "SE(Southeast)",
+        "S(South)", "SW(Southwest)", "W(West)", "NW(Northwest)"
+    ]
+
+    index = round(degrees / 45) % 8
+
+    return directions[index]
+
+
 # DISPLAY WEATHER
 
 def display_weather(data):
     
     weather_id = data["weather"][0]["id"]
     weather_icon = get_weather_icon(weather_id)
+    
+    wind_speed = data["wind"]["speed"]
+    wind_degrees = data["wind"].get("deg", 0)
+    wind_direction = get_wind_direction(wind_degrees)
 
     sunrise = datetime.fromtimestamp(
         data["sys"]["sunrise"]
@@ -116,7 +135,7 @@ def display_weather(data):
     print(f"🤒 Feels Like    : {data['main']['feels_like']:.1f}°C")
     print(f"{weather_icon}  Condition     : "f"{data['weather'][0]['description'].title()}")
     print(f"💧 Humidity      : {data['main']['humidity']}%")
-    print(f"🌬️  Wind Speed    : {data['wind']['speed']} m/s")
+    print(f"🌬️  Wind          : {wind_speed} m/s {wind_direction}")
     print(f"🎯 Pressure      : {data['main']['pressure']} hPa")
     print(f"👀 Visibility    : {data['visibility'] / 1000:.1f} km")
     print(f"🌅 Sunrise       : {sunrise}")
