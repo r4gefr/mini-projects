@@ -61,11 +61,43 @@ def get_weather(city):
     except requests.exceptions.RequestException as e:
         print(f"\n Request error: {e}")
         return None
+    
+
+# GET WEATHER ICON
+
+def get_weather_icon(weather_id):
+    """Return an emoji based on OpenWeatherMap weather ID."""
+
+    if 200 <= weather_id < 300:
+        return "⛈️"
+
+    elif 300 <= weather_id < 400:
+        return "🌦️"
+
+    elif 500 <= weather_id < 600:
+        return "🌧️"
+
+    elif 600 <= weather_id < 700:
+        return "❄️"
+
+    elif 700 <= weather_id < 800:
+        return "🌫️"
+
+    elif weather_id == 800:
+        return "☀️"
+
+    elif 801 <= weather_id <= 804:
+        return "☁️"
+
+    return "🌡️"
 
 
 # DISPLAY WEATHER
 
 def display_weather(data):
+    
+    weather_id = data["weather"][0]["id"]
+    weather_icon = get_weather_icon(weather_id)
 
     sunrise = datetime.fromtimestamp(
         data["sys"]["sunrise"]
@@ -82,7 +114,7 @@ def display_weather(data):
     print(f"📍 Location      : {data['name']}, {data['sys']['country']}")
     print(f"🌡️  Temperature   : {data['main']['temp']:.1f}°C")
     print(f"🤒 Feels Like    : {data['main']['feels_like']:.1f}°C")
-    print(f"☁️  Condition     : {data['weather'][0]['description'].title()}")
+    print(f"{weather_icon}  Condition     : "f"{data['weather'][0]['description'].title()}")
     print(f"💧 Humidity      : {data['main']['humidity']}%")
     print(f"🌬️  Wind Speed    : {data['wind']['speed']} m/s")
     print(f"🎯 Pressure      : {data['main']['pressure']} hPa")
