@@ -24,7 +24,7 @@ A collection of Python projects built while learning programming, problem-solvin
 | [Snake-Game](./Snake-Game) | Snake game with pause, restart, and dynamic difficulty | GUI |
 | [Snake-Water-Gun](./Snake-Water-Gun) | Regional Rock-Paper-Scissors variant with score tracking | CLI |
 | [To-Do-List](./To-Do-List) | Task manager with JSON-based persistence | CLI |
-| [Weather-Check](./Weather-Check) | Fetches Weather details for a particular location | CLI |
+| [Weather-Check](./Weather-Check) | Fetches Weather details for a particular location | CLI/GUI |
 
 More projects are added regularly. See each project's own `README.md` for setup and usage details.
 
