@@ -19,11 +19,11 @@ A collection of Python projects built while learning programming, problem-solvin
 | [Calculator](./Calculator) | CLI calculator supporting `+`, `-`, `*`, `/`, `%`, `//`, `**` | CLI |
 | [Expense-Tracker](./Expense-Tracker) | GUI app to log and track personal expenses | GUI |
 | [Internet-Connection-Checker](./Internet-Connection-Checker) | Checks and reports live internet connectivity status | CLI |
-| [Number-Guessing-Game](./Number-Guessing-Game) | Classic number guessing game with random target generation | CLI |
+| [Number-Guessing-Game](./Number-Guessing-Game) | Classic number guessing game with random target generation | CLI/GUI |
 | [Rock-Paper-Scissors](./Rock-Paper-Scissors) | Rock, Paper, Scissors against the computer | CLI |
 | [Snake-Game](./Snake-Game) | Snake game with pause, restart, and dynamic difficulty | GUI |
 | [Snake-Water-Gun](./Snake-Water-Gun) | Regional Rock-Paper-Scissors variant with score tracking | CLI |
-| [To-Do-List](./To-Do-List) | Task manager with JSON-based persistence | CLI |
+| [To-Do-List](./To-Do-List) | Task manager with JSON-based persistence | CLI/GUI |
 | [Weather-Check](./Weather-Check) | Fetches Weather details for a particular location | CLI/GUI |
 
 More projects are added regularly. See each project's own `README.md` for setup and usage details.
@@ -46,6 +46,7 @@ MiniProjects/
 ├── Snake-Game/
 ├── Snake-Water-Gun/
 ├── To-Do-List/
+├── Weather-Check/
 └── README.md
 ```
 
